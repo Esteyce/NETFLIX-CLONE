@@ -1,0 +1,40 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+.carousel{
+	width: 680;
+	height: 1000;
+	outline: 3px solid black;
+
+	/overflow: hidden;/
+
+	margin: 50px auto;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
+
+}
+
+.carousel ul{
+	display: flex;
+	list-style: none;
+	width: 894px;
+	height: 1556px ;
+}
+
+.carousel li{
+	position: relative;
+	animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide{
+	0%{left:0px}
+	20%{left: 0px}
+
+	30%{left:-200px}
+	50%{left: -200px}
+
+	60%{left:-300px}
+	90%{left: -300px}
+
+	100%{left:0px}
+}
